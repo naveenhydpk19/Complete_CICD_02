@@ -69,7 +69,7 @@ jobs:
       
       # Update Kubeconfig
       - name: Update kubeconfig
-        run: aws eks --region ${{ secrets.AWS_REGION }} update-kubeconfig --name actions-eks-cluster
+        run: aws eks --region ${{ secrets.AWS_REGION }} update-kubeconfig --name action-eks-cluster
 
       # Install kubectl
       - name: Install kubectl
